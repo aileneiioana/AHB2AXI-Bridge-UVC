@@ -1,0 +1,19 @@
+merge \
+cov_work/apb/test_example_1 12264 \
+cov_work/apb/test_example_2_12264 \
+cov_work/apb/test_example_3 12264 \
+cov_work/apb/test_example_4_12264 \
+cov_work/apb/test_example_5 12264 \
+cov_work/apb/test_example_6 12264 \
+cov_work/apb/test_example_7_12264 \
+cov_work/apb/test_example_8 12264 \
+cov_work/apb/test_example_9_12264 \
+cov_work/apb/test_example_10 12264 \
+cov_work/apb/test_example_11 12264 \
+cov_work/apb/test_example_12 12264 \
+-out merged_coverage \
+-overwrite \
+
+
+  
+

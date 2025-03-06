@@ -1,0 +1,23 @@
+#!/bin/bash
+vsim \
+-uvm \
+-gui \
+-linedebug \
+-seed 333 \
+-access +rwc \
+-coverage a \
+-covdesign apb \
+-covoverwrite \
+-incdir ../../common/uvcs/apb_uvc \
+-incdir ../src \
+-incdir ../rtl \
+-incdir ../tests \
+-incdir ../v_src \
+../rtl/*.v \
+../v_src/apb_bridge_tb.sv \
+-timescale 1ns/1ns \
+-ALLOWREDEFINITION \
++UVM_TESTNAME=reset_test \
+
+
+ 

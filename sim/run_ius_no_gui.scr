@@ -1,0 +1,18 @@
+#!/bin/bash
+irun \
+-uvm \
+-seed $2 \
+-access +rwc \
+-l logs/$1_$2.log \
+-coverage a \
+-covdesign ahb2axi \
+-covoverwrite \
+-covtest $1_$2 \
+-incdir ../src \
+-incdir ../rtl \
+-incdir ../example \
+../example/tb_example.sv \
+-timescale 1ns/1ns \
++UVM_TESTNAME=$1 \
++UVM_VERBOSITY=$3
+

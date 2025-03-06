@@ -1,0 +1,8 @@
+IMC(64): 19.09-s001: (c) Copyright 1995-2019 Cadence Design Systems Inc - Simulator version: 19.09-s001 - Coverage engine version: 19.09-s001
+Starting batch mode
+imc> load cov_work/scope/merged_coverage
+exec mkdir -p report
+report -out report/coverage.rpt -detail -metrics covergroup -all -kind abstract
+
+imc: *I,RUNLD: Successfully loaded run /home/iailenei/Home/ahb2axi_bridge/sim/cov_work/scope/merged_coverage.
+imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.

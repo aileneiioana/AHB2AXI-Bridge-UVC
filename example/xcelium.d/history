@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(24Aug2023:15:51:23):( xrun -uvm +incdir+../src +incdir+../rtl +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_1 -gui -coverage all -covoverwrite -input restore.tcl )
+s2::(24Aug2023:15:52:08):( xrun -uvm +incdir+../src +incdir+../rtl +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_2 -gui -coverage all -covoverwrite "-s " )
+s3::(24Aug2023:15:53:36):( xrun -uvm +incdir+../src +incdir+../rtl +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_2 -gui -coverage all -covoverwrite -s )
+s4::(24Aug2023:15:54:22):( xrun -uvm +incdir+../src +incdir+../rtl +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_2 -seed 15625 -gui -coverage all -covoverwrite -s )
+s5::(24Aug2023:15:55:18):( xrun -uvm +incdir+../src +incdir+../rtl +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_7 -seed 1562 10484 -gui -coverage all -covoverwrite -s )
+s6::(24Aug2023:15:55:34):( xrun -uvm +incdir+../src +incdir+../rtl +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_2 -seed 10484 -gui -coverage all -covoverwrite -s )

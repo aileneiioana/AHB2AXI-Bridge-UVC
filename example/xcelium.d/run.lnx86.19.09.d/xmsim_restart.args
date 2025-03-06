@@ -1,0 +1,40 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INPUT
+"@source /opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl"
++incdir+../src
++incdir+../rtl
++incdir+../example
+-uvmhome
+/opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d
+-sv_lib
+/opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmpli.so
++UVM_TESTNAME=test_example_2
+-gui
+-COVOVERWRITE
+-TCL
+-MESSAGES
+-svseed
+10484
+-SV_LIB
+/opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmdpi.so
++EMGRLOG
+xrun.log
+-XLSTIME
+1692881734
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx86.19.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx86.19.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx86.19.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun	19.09-s001"
+-XLNAME
+./xcelium.d/run.lnx86.19.09.d/buc-srv-03.easyic.com_15606
