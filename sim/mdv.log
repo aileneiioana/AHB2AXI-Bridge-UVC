@@ -1,0 +1,149 @@
+[INFO ] 2023-08-17 16:59:53,738 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48211
+[INFO ] 2023-08-17 17:00:07,226 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42300
+[INFO ] 2023-08-22 10:52:10,920 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33397
+[INFO ] 2023-08-22 10:52:28,960 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46671
+[INFO ] 2023-08-22 10:53:14,334 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48961
+[INFO ] 2023-08-22 11:37:32,310 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48811
+[INFO ] 2023-08-22 11:37:58,184 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39362
+[INFO ] 2023-08-22 11:38:19,439 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35784
+[INFO ] 2023-08-24 09:48:59,583 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41216
+[INFO ] 2023-08-24 09:49:31,037 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46336
+[INFO ] 2023-08-24 09:50:23,982 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33702
+[ERROR] 2023-08-24 09:51:55,014 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/amanoliu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,026 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/crizea'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,026 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/dvasile'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,027 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/dragos'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,014 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot read directory '/home/amarton'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,014 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-5] - Cannot read directory '/home/cconstantin'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,014 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot read directory '/home/backuppc'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,034 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/eaurica'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,034 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/epetrescu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,034 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot read directory '/home/gpencea'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,034 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot read directory '/home/gsimon'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,035 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-5] - Cannot read directory '/home/ibestea'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,035 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/kstrohmayer'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,036 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/mocanu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,038 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-7] - Cannot read directory '/home/dvlad'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,038 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot read directory '/home/smocanu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,039 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-5] - Cannot read directory '/home/sparamanov'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,039 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/zhascsi'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,039 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot read directory '/home/mpreda'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,040 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/chremaliuc'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,040 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-7] - Cannot read directory '/home/spatriche'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,040 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot read directory '/home/nzsugya'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,041 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-5] - Cannot read directory '/home/clutu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,041 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/iacuta'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,042 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot read directory '/home/agegiu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,042 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/bpalade'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,043 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-7] - Cannot read directory '/home/mradu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,043 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot read directory '/home/gitlab-runner'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,043 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-5] - Cannot read directory '/home/mocanua'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,044 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/sciurea'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,044 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot read directory '/home/tdasoveanu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,044 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/dnicula'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,045 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-7] - Cannot read directory '/home/dtanasescu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,045 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot read directory '/home/edulgheru'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,046 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-5] - Cannot read directory '/home/mrosu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,047 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/mgraur'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,047 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot read directory '/home/cstaicu'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,047 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/agabor'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,051 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-7] - Cannot read directory '/home/cdan'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,055 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-4] - Cannot read directory '/home/rblaga'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,056 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-5] - Cannot read directory '/home/rdanaila'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,056 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-6] - Cannot read directory '/home/eroncea'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,056 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-3] - Cannot read directory '/home/avarona'. Check if the directory has read permission, and rerun the command	   
+[ERROR] 2023-08-24 09:51:55,057 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-2] - Cannot read directory '/home/mpuiu'. Check if the directory has read permission, and rerun the command	   
+[INFO ] 2023-08-24 09:54:57,429 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37796
+[INFO ] 2023-08-24 09:55:22,369 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48641
+[INFO ] 2023-08-24 09:56:15,633 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40247
+[INFO ] 2023-08-24 10:01:21,070 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38171
+[INFO ] 2023-08-24 10:01:43,263 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42736
+[INFO ] 2023-08-24 10:02:52,399 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33333
+[INFO ] 2023-08-24 10:03:54,702 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35137
+[INFO ] 2023-08-24 10:05:50,874 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43169
+[INFO ] 2023-08-24 10:06:02,950 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42870
+[INFO ] 2023-08-24 10:06:20,567 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37782
+[INFO ] 2023-08-24 10:13:37,587 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46928
+[INFO ] 2023-08-24 10:13:48,767 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36402
+[INFO ] 2023-08-24 10:15:28,708 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44803
+[INFO ] 2023-08-24 10:18:50,733 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39612
+[INFO ] 2023-08-24 10:19:03,267 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41833
+[INFO ] 2023-08-24 10:20:17,093 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35649
+[INFO ] 2023-08-24 11:01:40,301 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38089
+[INFO ] 2023-08-24 11:01:56,557 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44613
+[INFO ] 2023-08-24 11:02:54,163 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34056
+[INFO ] 2023-08-24 11:04:51,123 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45120
+[INFO ] 2023-08-24 11:05:04,262 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40913
+[ERROR] 2023-08-24 11:05:04,740 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_coverage' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-08-24 11:05:24,054 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46378
+[INFO ] 2023-08-24 11:07:13,462 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42813
+[INFO ] 2023-08-24 11:07:25,775 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42640
+[ERROR] 2023-08-24 11:07:26,253 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_coverage' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-08-24 11:11:56,165 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43962
+[INFO ] 2023-08-24 11:12:11,443 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41804
+[ERROR] 2023-08-24 11:12:11,998 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_coverage' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-08-24 11:13:58,795 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44421
+[INFO ] 2023-08-24 11:14:14,879 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48777
+[ERROR] 2023-08-24 11:14:15,424 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - Directory 'cov_work/scope/merged_coverage' not found. Verify the existence of the specified directory, and rerun the command
+[INFO ] 2023-08-24 11:15:19,454 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35096
+[INFO ] 2023-08-24 11:17:23,509 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41769
+[INFO ] 2023-08-24 11:17:41,259 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46145
+[INFO ] 2023-08-24 11:18:40,616 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36922
+[INFO ] 2023-08-24 11:22:40,187 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36336
+[INFO ] 2023-08-24 11:22:56,377 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45750
+[INFO ] 2023-08-24 11:23:22,923 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35558
+[INFO ] 2023-08-24 11:54:58,519 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48116
+[INFO ] 2023-08-24 11:55:20,596 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36113
+[INFO ] 2023-08-24 11:55:42,268 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43156
+[INFO ] 2023-08-24 12:01:17,225 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44357
+[INFO ] 2023-08-24 12:01:34,496 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41430
+[INFO ] 2023-08-24 12:03:09,369 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40606
+[INFO ] 2023-08-24 12:13:26,794 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40415
+[INFO ] 2023-08-24 12:13:36,759 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 32842
+[INFO ] 2023-08-24 12:13:53,322 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33644
+[INFO ] 2023-08-24 13:22:43,679 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42006
+[INFO ] 2023-08-24 13:22:52,242 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45703
+[INFO ] 2023-08-24 13:23:21,139 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37413
+[INFO ] 2023-08-24 13:43:50,904 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40451
+[INFO ] 2023-08-24 13:44:02,914 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 36779
+[INFO ] 2023-08-24 13:44:25,525 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39353
+[INFO ] 2023-08-24 13:47:04,123 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 35139
+[INFO ] 2023-08-24 13:47:14,812 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 41629
+[INFO ] 2023-08-24 13:47:31,120 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42267
+[INFO ] 2023-08-24 13:50:43,328 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 47345
+[INFO ] 2023-08-24 13:50:54,427 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39732
+[INFO ] 2023-08-24 13:51:22,938 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38706
+[INFO ] 2023-08-24 13:54:48,041 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37859
+[INFO ] 2023-08-24 13:54:57,885 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44623
+[INFO ] 2023-08-24 13:55:34,718 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37611
+[INFO ] 2023-08-24 14:00:35,431 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33250
+[INFO ] 2023-08-24 14:00:46,809 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48523
+[INFO ] 2023-08-24 14:01:34,032 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38989
+[INFO ] 2023-08-24 14:05:29,166 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39380
+[INFO ] 2023-08-24 14:05:40,458 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44592
+[INFO ] 2023-08-24 14:05:56,631 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48483
+[INFO ] 2023-08-24 14:09:00,815 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42746
+[INFO ] 2023-08-24 14:09:12,872 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46645
+[INFO ] 2023-08-24 14:09:34,529 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 37367
+[INFO ] 2023-08-24 14:32:58,871 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42301
+[INFO ] 2023-08-24 14:33:14,143 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 42792
+[INFO ] 2023-08-24 14:33:28,556 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40361
+[INFO ] 2023-08-24 15:07:16,726 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 48149
+[INFO ] 2023-08-24 15:07:25,618 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34852
+[INFO ] 2023-08-24 15:08:10,677 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44862
+[INFO ] 2023-08-24 15:14:21,063 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44388
+[INFO ] 2023-08-24 15:14:33,638 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40278
+[INFO ] 2023-08-24 15:15:21,401 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 47078
+[INFO ] 2023-08-24 15:40:57,630 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 43387
+[INFO ] 2023-08-24 15:41:12,176 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34280
+[INFO ] 2023-08-24 15:41:38,216 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 38736
+[INFO ] 2023-08-24 15:47:30,200 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34477
+[INFO ] 2023-08-24 15:47:40,669 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 47670
+[INFO ] 2023-08-24 15:47:58,140 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 46885
+[INFO ] 2023-08-24 15:58:57,505 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 33721
+[INFO ] 2023-08-24 15:59:09,358 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 34340
+[INFO ] 2023-08-24 15:59:27,260 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 44221
+[INFO ] 2023-08-24 16:02:52,595 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40938
+[INFO ] 2023-08-24 16:03:05,850 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 40328
+[INFO ] 2023-08-24 16:29:48,440 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 45376
+[INFO ] 2023-08-24 16:30:03,362 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39944

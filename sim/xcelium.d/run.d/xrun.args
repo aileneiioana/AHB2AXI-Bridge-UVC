@@ -1,0 +1,28 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-uvm
+-seed
+13049
+-access
++rwc
+-l
+logs/test_example_12_13049.log
+-coverage
+a
+-covdesign
+apb
+-covoverwrite
+-covtest
+test_example_12_13049
++incdir+../src
++incdir+../rtl
++incdir+../example
+-access
+rwc
+../example/tb_example.sv
+-timescale
+1ns/1ns
++UVM_TESTNAME=test_example_12
++UVM_VERBOSITY=UVM_NONE

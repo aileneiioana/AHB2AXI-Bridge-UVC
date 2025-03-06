@@ -1,0 +1,25 @@
+
+SEED=12264
+UVM_VERBOSITY=UVM_MEDIUM
+
+rm -f -r logs
+mkdir logs
+
+./run_ius_no_gui.scr test_example_1 $SEED $UVM_VERBOSITY 
+./run_ius_no_gui.scr test_example_2 $SEED $UVM_VERBOSITY
+./run_ius_no_gui.scr test_example_3 $SEED $UVM_VERBOSITY 
+./run_ius_no_gui.scr test_example_4 $SEED $UVM_VERBOSITY
+./run_ius_no_gui.scr test_example_5 $SEED $UVM_VERBOSITY 
+./run_ius_no_gui.scr test_example_6 $SEED $UVM_VERBOSITY 
+./run_ius_no_gui.scr test_example_7 $SEED $UVM_VERBOSITY
+./run_ius_no_gui.scr test_example_8 $SEED $UVM_VERBOSITY 
+./run_ius_no_gui.scr test_example_9 $SEED $UVM_VERBOSITY
+./run_ius_no_gui.scr test_example_10 $SEED $UVM_VERBOSITY 
+./run_ius_no_gui.scr test_example_11 $SEED $UVM_VERBOSITY
+./run_ius_no_gui.scr test_example_12 $SEED $UVM_VERBOSITY 
+
+grep -H 'UVM_ERROR :' logs/*.log
+grep -H 'UVM_FATAL :' logs/*.log
+
+imc -exec run_imc_merge.scr
+

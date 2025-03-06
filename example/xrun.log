@@ -1,0 +1,692 @@
+xrun: 19.09-s001: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun	19.09-s001: Started on Aug 24, 2023 at 15:55:34 EEST
+xrun
+	-uvm
+	+incdir+../src
+	+incdir+../rtl
+	+incdir+../example
+	-access rwc
+	../example/tb_example.sv
+	+UVM_TESTNAME=test_example_2
+	-seed 10484
+	-gui
+	-coverage all
+	-covoverwrite
+	-s
+xrun: *N,SNPREC: The existing contents of the environment SPECMAN_PRE_COMMANDS will only be passed on to the simulation phase (config gen -seed=15625;test).
+Recompiling... reason: file './test_example_7.sv' is newer than expected.
+	expected: Tue Aug 22 13:49:31 2023
+	actual:   Thu Aug 24 15:54:52 2023
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d
+file: ../example/tb_example.sv
+                  randomize(err) with {err dist {1:= probability_of_ERROR, 0:=100};}; //randomize error with probability set in config
+                          |
+xmvlog: *W,FUNTSK (../src/ahb_driver.sv,356|26): function called as a task without void'().
+(`include file: ../src/ahb_driver.sv line 356, `include file: ../src/ahb_pkg.sv line 20, file: ../example/tb_example.sv line 4)
+      uvm_config_db#(int)::get(this, "", "has_coverage", has_coverage);
+                             |
+xmvlog: *W,FUNTSK (../src/ahb_monitor.sv,193|29): function called as a task without void'().
+(`include file: ../src/ahb_pkg.sv line 26, file: ../example/tb_example.sv line 4)
+      uvm_config_db#(int)::get(this, "", "has_checks", has_checks);
+                             |
+xmvlog: *W,FUNTSK (../src/ahb_monitor.sv,195|29): function called as a task without void'().
+(`include file: ../src/ahb_pkg.sv line 26, file: ../example/tb_example.sv line 4)
+              id.pop_front();
+                         |
+xmvlog: *W,FUNTSK (../src/axi_driver.sv,110|25): function called as a task without void'().
+(`include file: ../src/axi_pkg.sv line 26, file: ../example/tb_example.sv line 6)
+              id.pop_front();
+                         |
+xmvlog: *W,FUNTSK (../src/axi_driver.sv,191|25): function called as a task without void'().
+(`include file: ../src/axi_pkg.sv line 26, file: ../example/tb_example.sv line 6)
+      uvm_config_db#(int)::get(this, "", "has_coverage", has_coverage);
+                             |
+xmvlog: *W,FUNTSK (../src/axi_monitor.sv,323|29): function called as a task without void'().
+(`include file: ../src/axi_pkg.sv line 26, file: ../example/tb_example.sv line 6)
+      uvm_config_db#(int)::get(this, "", "has_checks", has_checks);
+                             |
+xmvlog: *W,FUNTSK (../src/axi_monitor.sv,325|29): function called as a task without void'().
+(`include file: ../src/axi_pkg.sv line 26, file: ../example/tb_example.sv line 6)
+      if(w_r[i] >1) return w_r[i];
+                             |
+xmvlog: *W,ENUMERR (../src/axi_monitor.sv,525|29): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+(`include file: ../src/axi_pkg.sv line 26, file: ../example/tb_example.sv line 6)
+     uvm_config_db#(int)::get(this, "", "has_coverage", has_coverage);
+                            |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,164|28): function called as a task without void'().
+     uvm_config_db#(int)::get(this, "", "has_checks", has_checks);
+                            |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,166|28): function called as a task without void'().
+          uvm_config_db#(int)::get(this, "", "number_of_write_transfers_outstanding", number_of_write_transfers_outstanding);
+                                 |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,167|33): function called as a task without void'().
+          uvm_config_db#(int)::get(this, "", "number_of_read_transfers_outstanding", number_of_read_transfers_outstanding);
+                                 |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,168|33): function called as a task without void'().
+          uvm_config_db#(int)::get(this, "", "outstanding", outstanding);
+                                 |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,169|33): function called as a task without void'().
+                 check_data_integrity_4kb_crossed(master_trans,slave_trans, write_slave_transfers.pop_front());
+                                                |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,524|48): function called as a task without void'().
+                 check_data_integrity_4kb_crossed(master_trans,slave_trans, read_slave_transfers.pop_front());
+                                                |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,526|48): function called as a task without void'().
+              check_data_integrity_wrap(master_trans,slave_trans);
+                                      |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,529|38): function called as a task without void'().
+                check_data_integrity_4kb_crossed(master_trans,slave_trans, write_slave_transfers.pop_front());
+                                               |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,603|47): function called as a task without void'().
+               else check_data_integrity_4kb_crossed(master_trans,slave_trans, read_slave_transfers.pop_front());
+                                                   |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,604|51): function called as a task without void'().
+            check_data_integrity_no_wrap(master_trans,slave_trans, addr_low);
+                                       |
+xmvlog: *W,FUNTSK (ahb2axi_scoreboard.sv,607|39): function called as a task without void'().
+      scoreboard = ahb2axi_scoreboard::type_id::create("ahb2axi_scoreboard",this);
+                                    |
+xmvlog: *W,NOUNAD (test_base.sv,52|36): This unadorned reference to a parameterized class (ahb2axi_scoreboard) is not legal. A class specialization of '#()' is assumed.
+	module worklib.tb_example:sv
+		errors: 0, warnings: 12
+xmvlog: *W,SPDUSD: Include directory ../rtl given but not used.
+xmvlog: *W,SPDUSD: Include directory ../example given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x69733078
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		axi_pkg
+		ahb_pkg
+		tb_example
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.ahb2axi_32bits
+		worklib.tb_example
+	Total FSMs extracted = 0
+      if (!uvm_config_db#(uvm_bitstream_t)::get(this,"","is_active", is_active))
+                                                                             |
+xmelab: *W,ENUMERR (../src/ahb_agent.sv,33|77): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+      if (!uvm_config_db#(uvm_bitstream_t)::get(this,"","agent_kind", agent_kind))
+                                                                               |
+xmelab: *W,ENUMERR (../src/ahb_agent.sv,38|79): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+            trans.ahb_size_type  = vif.mon_cb.hsize   ;
+                                     |
+xmelab: *W,ENUMERR (../src/ahb_monitor.sv,374|37): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+            trans.ahb_burst_type = vif.mon_cb.hburst  ;
+                                     |
+xmelab: *W,ENUMERR (../src/ahb_monitor.sv,375|37): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+            trans.ahb_op_type=vif.mon_cb.hwrite;
+                                |
+xmelab: *W,ENUMERR (../src/ahb_monitor.sv,389|32): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+               trans1.ahb_op_type = vif.mon_cb.hwrite;
+                                      |
+xmelab: *W,ENUMERR (../src/ahb_monitor.sv,407|38): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+               trans1.ahb_burst_type = vif.mon_cb.hburst; 
+                                         |
+xmelab: *W,ENUMERR (../src/ahb_monitor.sv,408|41): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+               trans1.ahb_size_type = vif.mon_cb.hsize;
+                                        |
+xmelab: *W,ENUMERR (../src/ahb_monitor.sv,409|40): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+                  if(vif.mst_cb.hwrite == AHB_WRITE)
+                       |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,246|23): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                  if(vif.mst_cb.hwrite == AHB_WRITE)
+                       |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,271|23): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                   if(vif.mst_cb.hwrite == AHB_WRITE)
+                        |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,287|24): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+            if( num_of_addr == 0 && vif.mst_cb.hwrite == AHB_WRITE && trans.ahb_trans_delay ==0)  
+                                      |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,304|38): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+               if(vif.mst_cb.hwrite == AHB_WRITE)
+                    |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,315|20): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+            wait(num_of_addr == 0 && vif.mst_cb.hreadyout == 1'b1 && vif.mst_cb.hsel <= 1'b1) ;
+                                                                       |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,325|71): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                if((vif.slv_cb.hreadyout && vif.slv_cb.htrans==SEQ && vif.slv_cb.hwrite == AHB_READ)||(vif.slv_cb.hreadyout && vif.slv_cb.htrans==NONSEQ && vif.slv_cb.hwrite == AHB_READ))
+                      |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,374|22): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                if((vif.slv_cb.hreadyout && vif.slv_cb.htrans==SEQ && vif.slv_cb.hwrite == AHB_READ)||(vif.slv_cb.hreadyout && vif.slv_cb.htrans==NONSEQ && vif.slv_cb.hwrite == AHB_READ))
+                                                                                                         |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,374|105): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+               while(vif.slv_cb.hreadyout == 'b0)
+                       |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,390|23): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                    vif.slv_cb.hreadyout <= ~vif.slv_cb.hreadyout;
+                                               |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,397|47): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                  if(vif.slv_cb.htrans == NONSEQ  && vif.slv_cb.hwrite == AHB_READ && vif.slv_cb.hreadyout && !trans.error_enable)
+                                                                                        |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,427|88): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                  if((data_index == err_pos) && vif.slv_cb.hreadyout && hresp_error_enable && trans.error_enable && (vif.slv_cb.htrans != BUSY))
+                                                  |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,440|50): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                        vif.slv_cb.hreadyout <= ~vif.slv_cb.hreadyout;
+                                                   |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,465|51): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                     if(vif.slv_cb.hwrite == AHB_READ && vif.slv_cb.hreadyout && vif.slv_cb.htrans != BUSY)
+                                                           |
+xmelab: *W,CONOTR (../src/ahb_driver.sv,472|59): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+      if (!uvm_config_db#(uvm_bitstream_t)::get(this,"","is_active", is_active))
+                                                                             |
+xmelab: *W,ENUMERR (../src/axi_agent.sv,33|77): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+      if (!uvm_config_db#(uvm_bitstream_t)::get(this,"","agent_kind", agent_kind))
+                                                                               |
+xmelab: *W,ENUMERR (../src/axi_agent.sv,38|79): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+        item.axi_size_type  = vif.mon_cb.awsize;
+                                |
+xmelab: *W,ENUMERR (../src/axi_monitor.sv,379|32): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+        item.axi_burst_type = vif.mon_cb.awburst;
+                                |
+xmelab: *W,ENUMERR (../src/axi_monitor.sv,380|32): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+        item.axi_resp = vif.mon_cb.bresp; // completes it with resp
+                          |
+xmelab: *W,ENUMERR (../src/axi_monitor.sv,447|26): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+        item.axi_size_type      = vif.mon_cb.arsize;
+                                    |
+xmelab: *W,ENUMERR (../src/axi_monitor.sv,495|36): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+        item.axi_burst_type     = vif.mon_cb.arburst;
+                                    |
+xmelab: *W,ENUMERR (../src/axi_monitor.sv,496|36): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+      if(w_r[i] >1) return w_r[i];
+                             |
+xmelab: *W,ENUMERR (../src/axi_monitor.sv,525|29): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+          `uvm_info(get_type_name(), $sformatf("ARLEN Calculation ERROR item.axi_length %d rlen_queue[vif.mon_cb.rid] %d id",item.axi_length, rlen_queue[vif.mon_cb.rid],vif.mon_cb.rid ), UVM_LOW)
+                                                                                                                                                                                                  |
+xmelab: *W,EXFARG (../src/axi_monitor.sv,571|194): Extra Argument with given format specifier.
+             if (vif.mst_cb.awready && vif.mst_cb.awvalid) begin
+                                         |
+xmelab: *W,CONOTR (../src/axi_driver.sv,106|41): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+              id.push_back(vif.mst_cb.awid);
+                             |
+xmelab: *W,CONOTR (../src/axi_driver.sv,107|29): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+             if (vif.mst_cb.bready && vif.mst_cb.bvalid) begin
+                   |
+xmelab: *W,CONOTR (../src/axi_driver.sv,109|19): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+              if (vif.mst_cb.awready && vif.mst_cb.awvalid) begin
+                                          |
+xmelab: *W,CONOTR (../src/axi_driver.sv,129|42): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+            if (vif.mst_cb.arready && vif.mst_cb.arvalid) begin
+                                        |
+xmelab: *W,CONOTR (../src/axi_driver.sv,187|40): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+              id.push_back(vif.mst_cb.arid);
+                             |
+xmelab: *W,CONOTR (../src/axi_driver.sv,188|29): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+             if (vif.mst_cb.rready && vif.mst_cb.rlast && vif.mst_cb.rvalid) begin
+                   |
+xmelab: *W,CONOTR (../src/axi_driver.sv,190|19): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+              if (vif.mst_cb.arready && vif.mst_cb.arvalid) begin
+                                          |
+xmelab: *W,CONOTR (../src/axi_driver.sv,209|42): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                read_ids.push_back(vif.mst_cb.arid);
+                                     |
+xmelab: *W,CONOTR (../src/axi_driver.sv,231|37): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                read_lengths.push_back(vif.mst_cb.arlen);
+                                         |
+xmelab: *W,CONOTR (../src/axi_driver.sv,232|41): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+          if (vif.mst_cb.wready && vif.mst_cb.wvalid) begin
+                                     |
+xmelab: *W,CONOTR (../src/axi_driver.sv,273|37): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+              @(vif.slv_cb iff (vif.slv_cb.arready && vif.slv_cb.arvalid)); 
+                                  |
+xmelab: *W,CONOTR (../src/axi_driver.sv,354|34): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                    vif.mst_cb.rready<= ~vif.mst_cb.rready;
+                                           |
+xmelab: *W,CONOTR (../src/axi_driver.sv,413|43): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+                    vif.mst_cb.bready<= ~vif.mst_cb.bready;
+                                           |
+xmelab: *W,CONOTR (../src/axi_driver.sv,437|43): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+         @(vif.slv_cb iff (vif.slv_cb.awready && vif.slv_cb.awvalid)); //collects awid
+                             |
+xmelab: *W,CONOTR (../src/axi_driver.sv,452|29): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+         @(vif.slv_cb iff (vif.slv_cb.wready && vif.slv_cb.wvalid && vif.slv_cb.wlast)); //which awid is finished on write data so we can put bresp
+                             |
+xmelab: *W,CONOTR (../src/axi_driver.sv,457|29): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+          @(vif.slv_cb iff (vif.slv_cb.wready && vif.slv_cb.wvalid && vif.slv_cb.wlast)); //collects ids to have data to shuffle
+                              |
+xmelab: *W,CONOTR (../src/axi_driver.sv,464|30): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+          else  @(vif.slv_cb iff (vif.slv_cb.wready && vif.slv_cb.wvalid && vif.slv_cb.wlast)); 
+                                    |
+xmelab: *W,CONOTR (../src/axi_driver.sv,468|36): A clocking output is not a legal rvalue [IEEE STD 1800-2009].
+    `uvm_info(get_type_name(), $sformatf("actual_number_of_master_transfers %d expected_number_of_master_transfers &d",actual_number_of_master_transfers,expected_number_of_master_transfers), UVM_LOW) 
+                                                                                                                                                                                                      |
+xmelab: *W,EXFARG (./ahb2axi_scoreboard.sv,656|198): Extra Argument with given format specifier.
+     `uvm_info(get_type_name(), $sformatf("actual_number_of_master_transfers %d expected_number_of_master_transfers &d",actual_number_of_master_transfers,expected_number_of_master_transfers), UVM_LOW) 
+                                                                                                                                                                                                       |
+xmelab: *W,EXFARG (./ahb2axi_scoreboard.sv,661|199): Extra Argument with given format specifier.
+	Building instance overlay tables: ..................
+class axi_agent_config  extends uvm_object;
+                     |
+xmelab: *W,COVUCC (./axi_agent_config.sv,9|21): Block and Expression coverage types are not supported inside SystemVerilog classes. Use CCF command to enable type-based block and expression control coverage. There may also be other such classes in the design.
+.. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.uvm_pkg:sv <0x734a6f12>
+			streams:  24, words: 21307
+		worklib.uvm_pkg:sv <0x23a311cd>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x48852c35>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x04c9e5ae>
+			streams:  25, words: 98048
+		worklib.uvm_pkg:sv <0x4ad4ecb8>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x0666f92d>
+			streams:  23, words: 16678
+		worklib.uvm_pkg:sv <0x7114d3d0>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x68e4f492>
+			streams:  25, words: 52570
+		worklib.uvm_pkg:sv <0x52bc8ba8>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x3a9dd55a>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x73509dea>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x3ec7bd05>
+			streams:  25, words: 107026
+		worklib.uvm_pkg:sv <0x23cc027a>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x38ef3a9e>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x082b2c29>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x1789c13a>
+			streams:  25, words: 165383
+		worklib.uvm_pkg:sv <0x51904857>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x46e1c47c>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x49489915>
+			streams:  37, words: 43437
+		worklib.uvm_pkg:sv <0x5fa02c63>
+			streams:  25, words: 309043
+		worklib.uvm_pkg:sv <0x56f5cb5d>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x3c8fbaae>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x663f78b8>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x67479241>
+			streams:  25, words: 66676
+		worklib.uvm_pkg:sv <0x325764f8>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x7dbcc508>
+			streams:  23, words: 16678
+		worklib.uvm_pkg:sv <0x5c151e08>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x3e5e7f9f>
+			streams:  25, words: 57734
+		worklib.uvm_pkg:sv <0x2362ac70>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x74b130a1>
+			streams:  23, words: 16579
+		worklib.uvm_pkg:sv <0x54b886aa>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x0203d5d5>
+			streams:  25, words: 107026
+		worklib.uvm_pkg:sv <0x35305c20>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x0d090ec2>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x5055d77c>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x78960951>
+			streams:  25, words: 165383
+		worklib.uvm_pkg:sv <0x642be7a1>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x7a71f3a9>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x059e0982>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x442056d6>
+			streams:  25, words: 309043
+		worklib.uvm_pkg:sv <0x18436d4f>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x0c55a316>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x6fc41892>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x1421e645>
+			streams:  25, words: 31097
+		worklib.uvm_pkg:sv <0x34ccd82e>
+			streams:  25, words: 22092
+		worklib.uvm_pkg:sv <0x6ad381bb>
+			streams:  23, words: 16680
+		worklib.uvm_pkg:sv <0x426357a6>
+			streams:  37, words: 43341
+		worklib.uvm_pkg:sv <0x294db641>
+			streams:  25, words: 31097
+		worklib.uvm_pkg:sv <0x302efac6>
+			streams:  25, words: 22092
+		worklib.tb_example:sv <0x734e8e18>
+			streams:  27, words: 20214
+		worklib.tb_example:sv <0x4714cbfb>
+			streams: 110, words: 190285
+xmelab: *W,COVNOEN: By default, toggle coverage is not supported for systemverilog enumerated nets and variables. To enable toggle coverage of these objects, specify the 'set_toggle_scoring -sv_enum' command in the coverage configuration file.
+bit [37:0] wr_pend_req_q [$]; // it stores {hburst, hsize, haddr}
+                       |
+xmelab: *W,COVUTA (../rtl/ahb2axi_32bits.sv,192|23): Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory and reference ports. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.
+bit [34:0] rd_incr_data_array[16];
+                            |
+xmelab: *W,COVMDD (../rtl/ahb2axi_32bits.sv,324|28): Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+	Building instance specific data structures.
+xmelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+xmelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       2       2
+		Interfaces:                    2       2
+		Verilog packages:              6       6
+		Registers:                 18930   12773
+		Scalar wires:                203       -
+		Expanded wires:              190      14
+		Vectored wires:               28       -
+		Named events:                  7      25
+		Always blocks:               199     199
+		Initial blocks:              558     300
+		Clocking blocks:               6       6
+		Clocking items:              138     138
+		Parallel blocks:              60      61
+		Cont. assignments:             8       8
+		Pseudo assignments:            4       4
+		Assertions:                   62      62
+		Covergroup Instances:          0      17
+		Compilation units:             1       1
+		SV Class declarations:       261     377
+		SV Class specializations:    539     539
+		Simulation timescale:        1ps
+	Writing initial simulation snapshot: worklib.tb_example:sv
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED set from command line: 10484
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM1909/tools/xcelium/files/xmsimrc
+xcelium> source /opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> # Restoring simulation environment...
+xcelium> input {restore.tcl}
+xcelium> 
+xcelium> # XM-Sim Command File
+xcelium> # TOOL:	xmsim	19.09-s001
+xcelium> #
+xcelium> #
+xcelium> # You can restore this configuration with:
+xcelium> #
+xcelium> #      xrun -uvm +incdir+../src +incdir+../rtl +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_1 -coverage all -covoverwrite -input restore.tcl
+xcelium> #
+xcelium> 
+xcelium> set tcl_prompt1 {puts -nonewline "xcelium> "}
+puts -nonewline "xcelium> "
+xcelium> set tcl_prompt2 {puts -nonewline "> "}
+puts -nonewline "> "
+xcelium> set vlog_format %h
+%h
+xcelium> set vhdl_format %v
+%v
+xcelium> set real_precision 6
+6
+xcelium> set display_unit auto
+auto
+xcelium> set time_unit module
+module
+xcelium> set heap_garbage_size -200
+-200
+xcelium> set heap_garbage_time 0
+0
+xcelium> set assert_report_level note
+note
+xcelium> set assert_stop_level error
+error
+xcelium> set autoscope yes
+yes
+xcelium> set assert_1164_warnings yes
+yes
+xcelium> set pack_assert_off {}
+xcelium> set severity_pack_assert_off {note warning}
+note warning
+xcelium> set assert_output_stop_level failed
+failed
+xcelium> set tcl_debug_level 0
+0
+xcelium> set relax_path_name 1
+1
+xcelium> set vhdl_vcdmap XX01ZX01X
+XX01ZX01X
+xcelium> set intovf_severity_level ERROR
+ERROR
+xcelium> set probe_screen_format 0
+0
+xcelium> set rangecnst_severity_level ERROR
+ERROR
+xcelium> set textio_severity_level ERROR
+ERROR
+xcelium> set vital_timing_checks_on 1
+1
+xcelium> set vlog_code_show_force 0
+0
+xcelium> set assert_count_attempts 1
+1
+xcelium> set tcl_all64 false
+false
+xcelium> set tcl_runerror_exit false
+false
+xcelium> set assert_report_incompletes 0
+0
+xcelium> set show_force 1
+1
+xcelium> set force_reset_by_reinvoke 0
+0
+xcelium> set tcl_relaxed_literal 0
+0
+xcelium> set probe_exclude_patterns {}
+xcelium> set probe_packed_limit 4k
+4k
+xcelium> set probe_unpacked_limit 16k
+16k
+xcelium> set assert_internal_msg no
+no
+xcelium> set svseed 1
+1
+xcelium> set assert_reporting_mode 0
+0
+xcelium> alias . run
+xcelium> alias quit exit
+xcelium> stop -create -name Randomize -randomize
+Created stop Randomize
+xcelium> database -open -shm -into waves.shm waves -default
+Created default SHM database waves
+xcelium> probe -create -database waves tb_example.ahb_master_if.hclk tb_example.ahb_master_if.hreset_n tb_example.ahb_master_if.hsel tb_example.ahb_master_if.htrans tb_example.ahb_master_if.hreadyout tb_example.ahb_master_if.haddr tb_example.ahb_master_if.hwdata tb_example.ahb_master_if.hwstrobe tb_example.ahb_master_if.hrdata tb_example.ahb_master_if.hresp tb_example.ahb_master_if.hwrite tb_example.ahb_master_if.hburst tb_example.ahb_master_if.hsize tb_example.axi_slave_if.aclk tb_example.axi_slave_if.aresetn tb_example.axi_slave_if.arburst tb_example.axi_slave_if.arlen tb_example.axi_slave_if.arsize tb_example.axi_slave_if.arvalid tb_example.axi_slave_if.arready tb_example.axi_slave_if.araddr tb_example.axi_slave_if.arid tb_example.axi_slave_if.awburst tb_example.axi_slave_if.awlen tb_example.axi_slave_if.awvalid tb_example.axi_slave_if.awready tb_example.axi_slave_if.awaddr tb_example.axi_slave_if.awid tb_example.axi_slave_if.awsize tb_example.axi_slave_if.bvalid tb_example.axi_slave_if.bready tb_example.axi_slave_if.bid tb_example.axi_slave_if.rvalid tb_example.axi_slave_if.rready tb_example.axi_slave_if.rdata tb_example.axi_slave_if.rid tb_example.axi_slave_if.rresp tb_example.axi_slave_if.wvalid tb_example.axi_slave_if.wready tb_example.axi_slave_if.wdata tb_example.axi_slave_if.wlast tb_example.axi_slave_if.wstrb
+Created probe 1
+xcelium> probe -create -database waves tb_example.axi_slave_if.rlast
+Created probe 2
+xcelium> probe -create -database waves tb_example.axi_slave_if.bresp
+Created probe 3
+xcelium> 
+xcelium> simvision -input restore.tcl.svcf
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (19.09-s001)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'axi_agent_config' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_INFO @ 0: reporter [RNTST] Running test test_example_2...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------------------------------
+Name                                           Type                         Size  Value     
+--------------------------------------------------------------------------------------------
+uvm_test_top                                   test_example_2               -     @3050     
+  ahb2axi_scoreboard                           ahb2axi_scoreboard           -     @3963     
+    master_export                              uvm_analysis_imp_ahb_master  -     @4038     
+    slave_export                               uvm_analysis_imp_axi_slave   -     @4089     
+    has_checks                                 integral                     1     'h0       
+    has_coverage                               integral                     1     'h0       
+    number_of_write_transfers_outstanding      integral                     32    'h1       
+    number_of_read_transfers_outstanding       integral                     32    'h1       
+    outstanding                                integral                     1     'h0       
+  master_env                                   ahb_env#(AW,DW)              -     @3258     
+    agent                                      ahb_agent #(AW,DW)           -     @4125     
+      driver                                   ahb_driver#(AW,DW)           -     @4894     
+        rsp_port                               uvm_analysis_port            -     @4995     
+        seq_item_port                          uvm_seq_item_pull_port       -     @4946     
+        agent_kind                             ahb_agent_kind_t             1     AHB_MASTER
+        reactive_slave                         integral                     1     'h0       
+        probability_of_ERROR                   integral                     32    'h0       
+        busy_enable                            integral                     1     'h1       
+        idle_enable                            integral                     1     'h1       
+        hresp_error_enable                     integral                     1     'h0       
+        one_kb_boundry_enable                  integral                     1     'h1       
+      monitor                                  ahb_monitor #(AW,DW)         -     @3264     
+        item_collected_port                    uvm_analysis_port            -     @4219     
+        has_checks                             integral                     1     'h1       
+        has_coverage                           integral                     1     'h1       
+      sequencer                                ahb_sequencer #(AW,DW)       -     @4258     
+        rsp_export                             uvm_analysis_export          -     @4315     
+        seq_item_export                        uvm_seq_item_pull_imp        -     @4863     
+        arbitration_queue                      array                        0     -         
+        lock_queue                             array                        0     -         
+        num_last_reqs                          integral                     32    'd1       
+        num_last_rsps                          integral                     32    'd1       
+      is_active                                uvm_active_passive_enum      1     UVM_ACTIVE
+      agent_kind                               ahb_agent_kind_t             1     AHB_MASTER
+  slave_env                                    axi_env#(AW,DW)              -     @3294     
+    agent                                      axi_agent #(AW,DW)           -     @5054     
+      driver                                   axi_driver #(AW,DW)          -     @5827     
+        rsp_port                               uvm_analysis_port            -     @5928     
+        seq_item_port                          uvm_seq_item_pull_port       -     @5879     
+        number_of_write_transfers_outstanding  integral                     32    'h1       
+        number_of_read_transfers_outstanding   integral                     32    'h1       
+        outstanding                            integral                     1     'h0       
+      monitor                                  axi_monitor #(AW,DW)         -     @5088     
+        item_collected_port                    uvm_analysis_port            -     @5152     
+        has_checks                             integral                     1     'h1       
+        has_coverage                           integral                     1     'h1       
+        number_of_write_transfers_outstanding  integral                     32    'h1       
+        number_of_read_transfers_outstanding   integral                     32    'h1       
+        outstanding                            integral                     1     'h0       
+      sequencer                                axi_sequencer #(AW,DW)       -     @5191     
+        rsp_export                             uvm_analysis_export          -     @5248     
+        seq_item_export                        uvm_seq_item_pull_imp        -     @5796     
+        arbitration_queue                      array                        0     -         
+        lock_queue                             array                        0     -         
+        num_last_reqs                          integral                     32    'd1       
+        num_last_rsps                          integral                     32    'd1       
+      is_active                                uvm_active_passive_enum      1     UVM_ACTIVE
+      agent_kind                               axi_agent_kind_t             1     AXI_SLAVE 
+  v_sequencer                                  virtual_sequencer            -     @3324     
+    rsp_export                                 uvm_analysis_export          -     @3382     
+    seq_item_export                            uvm_seq_item_pull_imp        -     @3932     
+    arbitration_queue                          array                        0     -         
+    lock_queue                                 array                        0     -         
+    num_last_reqs                              integral                     32    'd1       
+    num_last_rsps                              integral                     32    'd1       
+--------------------------------------------------------------------------------------------
+
+UVM_INFO /opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 806730: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_WARNING @ 806730: uvm_test_top.ahb2axi_scoreboard [UVM_DEPRECATED] build()/build_phase() has been called explicitly, outside of the phasing system. This usage of build is deprecated and may lead to unexpected behavior.
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    3
+UVM_WARNING :    2
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[TPRGED]     1
+[UVMTOP]     1
+[UVM_DEPRECATED]     1
+Simulation complete via $finish(1) at time 806730 PS + 53
+/opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> ^C
+xcelium> exit
+xmsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ctrl_cov" will not be dumped to database as per_instance option value is set to 0:./ahb2axi_scoreboard.sv, 58.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "adress_space_cg" will not be dumped to database as per_instance option value is set to 0:./ahb2axi_scoreboard.sv, 84.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "adress_space_toggle_cov" will not be dumped to database as per_instance option value is set to 0:./ahb2axi_scoreboard.sv, 147.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_checkers_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 73.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_busy_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 90.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_signal_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 104.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_reset_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 139.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_trans_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 143.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "hwdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 162.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "hrdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 175.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "transfer_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 69.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "axi_signal_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 79.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "axi_delay_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 168.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "wdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 251.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "rdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 264.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "raddr_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 277.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "waddr_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 290.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "transfer_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 69.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "axi_signal_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 79.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "axi_delay_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 168.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "wdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 251.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "rdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 264.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "raddr_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 277.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "waddr_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/axi_monitor.sv, 290.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ctrl_cov" will not be dumped to database as per_instance option value is set to 0:./ahb2axi_scoreboard.sv, 58.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "adress_space_cg" will not be dumped to database as per_instance option value is set to 0:./ahb2axi_scoreboard.sv, 84.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "adress_space_toggle_cov" will not be dumped to database as per_instance option value is set to 0:./ahb2axi_scoreboard.sv, 147.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_checkers_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 73.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_busy_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 90.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_signal_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 104.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_reset_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 139.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "ahb_trans_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 143.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "hwdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 162.
+xmsim: *W,CGPIZE: Instance coverage for covergroup instance "hrdata_toggle_cov" will not be dumped to database as per_instance option value is set to 0:../src/ahb_monitor.sv, 175.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_example(tb_example)
+  scope    :  scope
+  testname :  test_sv1
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_7027b4b4_14bf3dc9.ucm
+  data               :  ./cov_work/scope/test_sv1/icc_7027b4b4_14bf3dc9.ucd
+TOOL:	xrun	19.09-s001: Exiting on Aug 24, 2023 at 15:57:12 EEST  (total: 00:01:38)

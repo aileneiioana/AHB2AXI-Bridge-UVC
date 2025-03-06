@@ -1,0 +1,13 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++NoArgsToLog
+-COVERAGE
+a
+-COVDESIGN
+apb
+-COVOVERWRITE
+-COVTEST
+test_example_12_13049
+-UPDATE

@@ -1,0 +1,28 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+<> User: iailenei
+
+Host: buc-srv-03.easyic.com
+
+Report date: Thu 24 Aug 2023 16:30:03 EEST
+
+Report options: -detail -metrics covergroup -out report/coverage.rpt -all -kind abstract
+
+Coverage database path: /home/iailenei/Home/ahb2axi_bridge/sim/cov_work/scope/merged_coverage
+
+Coverage model files: /home/iailenei/Home/ahb2axi_bridge/sim/cov_work/scope/merged_coverage/icc_7027b4b4_14bf3dc9.ucm
+
+Coverage data files: /home/iailenei/Home/ahb2axi_bridge/sim/cov_work/scope/merged_coverage/icc_7027b4b4_14bf3dc9.ucd
+
+CCF files:  None
+
+
+Coverage database date: Thu 24 Aug 2023 15:45:02 EEST
+
+*** There were no refinement files applied ***
+
+  <>
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based
+=======================================================================
+
