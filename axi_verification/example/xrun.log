@@ -1,0 +1,222 @@
+xrun: 19.09-s001: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun	19.09-s001: Started on Feb 21, 2023 at 14:44:48 EET
+xrun
+	-uvm
+	+incdir+../src
+	+incdir+../example
+	-access rwc
+	../example/tb_example.sv
+	+UVM_TESTNAME=test_example_1
+	-gui
+	-coverage all
+	-covoverwrite
+	-s
+Recompiling... reason: file './tb_example.sv' is newer than expected.
+	expected: Tue Feb 21 14:43:12 2023
+	actual:   Tue Feb 21 14:43:55 2023
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d
+file: ../example/tb_example.sv
+      uvm_config_db#(int)::get(this, "", "has_coverage", has_coverage);
+                             |
+xmvlog: *W,FUNTSK (../src/axi_monitor.sv,40|29): function called as a task without void'().
+(`include file: ../src/axi_pkg.sv line 24, file: ../example/tb_example.sv line 4)
+      uvm_config_db#(int)::get(this, "", "has_checks", has_checks);
+                             |
+xmvlog: *W,FUNTSK (../src/axi_monitor.sv,42|29): function called as a task without void'().
+(`include file: ../src/axi_pkg.sv line 24, file: ../example/tb_example.sv line 4)
+  endfunction: check
+                   |
+xmvlog: *W,LBLMAT (axi_scoreboard.sv,55|19): Label/name mismatch: check_phase - check.
+(`include file: axi_scoreboard.sv line 55, `include file: test_base.sv line 9, `include file: test_lib.sv line 8, file: ../example/tb_example.sv line 12)
+      scoreboard = axi_scoreboard::type_id::create("axi_scoreboard",this);
+                                |
+xmvlog: *W,NOUNAD (test_base.sv,42|32): This unadorned reference to a parameterized class (axi_scoreboard) is not legal. A class specialization of '#()' is assumed.
+	module worklib.tb_example:sv
+		errors: 0, warnings: 2
+xmvlog: *W,SPDUSD: Include directory ../example given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		axi_pkg
+		tb_example
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.tb_example
+	Total FSMs extracted = 0
+      if (!uvm_config_db#(uvm_bitstream_t)::get(this,"","is_active", is_active))
+                                                                             |
+xmelab: *W,ENUMERR (../src/axi_agent.sv,33|77): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+      if (!uvm_config_db#(uvm_bitstream_t)::get(this,"","agent_kind", agent_kind))
+                                                                               |
+xmelab: *W,ENUMERR (../src/axi_agent.sv,38|79): This assignment is a violation of SystemVerilog strong typing rules for enumeration datatypes.
+	Building instance overlay tables: ....................
+class virtual_sequencer extends uvm_sequencer;
+                      |
+xmelab: *W,COVUCC (./virtual_sequencer.sv,10|22): Block and Expression coverage types are not supported inside SystemVerilog classes. Use CCF command to enable type-based block and expression control coverage. There may also be other such classes in the design.
+ Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.uvm_pkg:sv <0x6f2e28d9>
+			streams:  23, words: 14472
+		worklib.uvm_pkg:sv <0x16ad3622>
+			streams:  29, words: 31700
+		worklib.uvm_pkg:sv <0x7062336f>
+			streams:  25, words: 26500
+		worklib.uvm_pkg:sv <0x1eed7312>
+			streams:  25, words: 22092
+		worklib.tb_example:sv <0x6d2737a2>
+			streams:  27, words: 19889
+		worklib.tb_example:sv <0x069acbbd>
+			streams: 121, words: 68139
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       1       1
+		Interfaces:                    2       1
+		Verilog packages:              5       5
+		Registers:                 14152   10313
+		Scalar wires:                 66       -
+		Expanded wires:               38       3
+		Vectored wires:               16       -
+		Named events:                  4      12
+		Initial blocks:              299     162
+		Clocking blocks:               6       3
+		Clocking items:              168      84
+		Parallel blocks:              28      29
+		Cont. assignments:            28      28
+		Pseudo assignments:            2       2
+		Assertions:                    2       2
+		SV Class declarations:       205     320
+		SV Class specializations:    391     391
+		Simulation timescale:        1ps
+	Writing initial simulation snapshot: worklib.tb_example:sv
+xmsim: *W,XCLGNOPTM: The SystemVerilog constraint solver Xceligen options 'seed_only_rand and process_alternate_rng and ignore_worklib_name' are not specified and will default to 0. The recommended value for each of them is 1 which will become the default in a future release.
+SVSEED default: 1
+xmsim: *W,RNDXCELON: Xceligen, the new SystemVerilog constraint solver is used. Disabling Xceligen and using the legacy constraint solver is possible with "xrun/xmsim -xceligen on=0 ...".
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM1909/tools/xcelium/files/xmsimrc
+xcelium> source /opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> 
+-------------------------------------
+Relinquished control to SimVision...
+# Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (19.09-s001)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_example_1...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------------
+Name                         Type                         Size  Value     
+--------------------------------------------------------------------------
+uvm_test_top                 test_example_1               -     @2658     
+  axi_scoreboard             axi_scoreboard               -     @3494     
+    master_export            uvm_analysis_imp_axi_master  -     @3546     
+    slave_export             uvm_analysis_imp_axi_slave   -     @3597     
+  master_env                 axi_env#(AW,DW)              -     @2789     
+    agent                    axi_agent #(AW,DW)           -     @3631     
+      driver                 axi_driver#(AW,DW)           -     @4390     
+        rsp_port             uvm_analysis_port            -     @4489     
+        seq_item_port        uvm_seq_item_pull_port       -     @4440     
+      monitor                axi_monitor #(AW,DW)         -     @2795     
+        item_collected_port  uvm_analysis_port            -     @3722     
+        has_checks           integral                     1     'h1       
+        has_coverage         integral                     1     'h1       
+      sequencer              axi_sequencer #(AW,DW)       -     @3702     
+        rsp_export           uvm_analysis_export          -     @3811     
+        seq_item_export      uvm_seq_item_pull_imp        -     @4359     
+        arbitration_queue    array                        0     -         
+        lock_queue           array                        0     -         
+        num_last_reqs        integral                     32    'd1       
+        num_last_rsps        integral                     32    'd1       
+      is_active              uvm_active_passive_enum      1     UVM_ACTIVE
+      agent_kind             axi_agent_kind_t             1     AXI_MASTER
+  slave_env                  axi_env#(AW,DW)              -     @2825     
+    agent                    axi_agent #(AW,DW)           -     @4546     
+      driver                 axi_driver#(AW,DW)           -     @5280     
+        rsp_port             uvm_analysis_port            -     @5375     
+        seq_item_port        uvm_seq_item_pull_port       -     @5327     
+      monitor                axi_monitor #(AW,DW)         -     @4576     
+        item_collected_port  uvm_analysis_port            -     @4625     
+        has_checks           integral                     1     'h1       
+        has_coverage         integral                     1     'h1       
+      sequencer              axi_sequencer #(AW,DW)       -     @4655     
+        rsp_export           uvm_analysis_export          -     @4710     
+        seq_item_export      uvm_seq_item_pull_imp        -     @5250     
+        arbitration_queue    array                        0     -         
+        lock_queue           array                        0     -         
+        num_last_reqs        integral                     32    'd1       
+        num_last_rsps        integral                     32    'd1       
+      is_active              uvm_active_passive_enum      1     UVM_ACTIVE
+      agent_kind             axi_agent_kind_t             1     AXI_SLAVE 
+  v_sequencer                virtual_sequencer            -     @2855     
+    rsp_export               uvm_analysis_export          -     @2913     
+    seq_item_export          uvm_seq_item_pull_imp        -     @3463     
+    arbitration_queue        array                        0     -         
+    lock_queue               array                        0     -         
+    num_last_reqs            integral                     32    'd1       
+    num_last_rsps            integral                     32    'd1       
+--------------------------------------------------------------------------
+
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+UVM_INFO /opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 400030: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_WARNING @ 400030: uvm_test_top.axi_scoreboard [UVM_DEPRECATED] build()/build_phase() has been called explicitly, outside of the phasing system. This usage of build is deprecated and may lead to unexpected behavior.
+UVM_INFO axi_scoreboard.sv(54) @ 400030: uvm_test_top.axi_scoreboard [axi_scoreboard] The Scoreboard done checking           0 Master transactions and           0 Slave transactions
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    4
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[UVM_DEPRECATED]     1
+[axi_scoreboard]     1
+Simulation complete via $finish(1) at time 400030 PS + 53
+/opt/cadence/XCELIUM1909/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> 

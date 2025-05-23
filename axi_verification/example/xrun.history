@@ -1,0 +1,8 @@
+s1(21Feb2023:14:28:07):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_base -gui -coverage all -covoverwrite 
+s2(21Feb2023:14:42:04):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_base -gui -coverage all -covoverwrite 
+s3(21Feb2023:14:42:32):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_base -gui -coverage all -covoverwrite "-s " 
+s4(21Feb2023:14:42:39):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_base -gui -coverage all -covoverwrite -s 
+s5(21Feb2023:14:42:52):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_base -gui -coverage all -covoverwrite -s 
+s6(21Feb2023:14:43:18):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_base -gui -coverage all -covoverwrite -s 
+s7(21Feb2023:14:43:41):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_base -gui -coverage all -covoverwrite -s 
+s8(21Feb2023:14:44:48):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_1 -gui -coverage all -covoverwrite -s 

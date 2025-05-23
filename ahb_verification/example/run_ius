@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=$1 -gui -coverage all -covoverwrite
+#+UVM_OBJECTION_TRACE +UVM_VERBOSITY=UVM_DEBUG

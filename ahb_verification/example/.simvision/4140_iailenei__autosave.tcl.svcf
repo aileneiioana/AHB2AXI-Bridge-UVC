@@ -1,0 +1,142 @@
+
+#
+# Preferences
+#
+preferences set toolbar-Standard-WatchWindow {
+  usual
+  shown 0
+}
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-Windows-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set toolbar-Standard-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set toolbar-SimControl-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-TimeSearch-WatchWindow {
+  usual
+  shown 0
+}
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 730x500+261+33}] != ""} {
+    window geometry "Design Browser 1" 730x500+261+33
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set -scope  simulator::tb_example 
+browser set \
+    -signalsort name
+browser yview see  simulator::tb_example 
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1920x940+0+24}] != ""} {
+    window geometry "Waveform 1" 1920x940+0+24
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	{simulator::tb_example.haddr[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_example.hburst[2:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_example.hclk
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_example.hrdata[31:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_example.hreadyout
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_example.hreset_n
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_example.hresp
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_example.hsel
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_example.hsize[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_example.htrans[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_example.hwdata[31:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_example.hwrite
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_example.hwstrobe[3:0]}
+	} ]
+
+waveform xview limits 1916930ps 1918930ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Assertion Browser windows
+#
+if {[catch {window new AssertionBrowser -name "Assertion Browser 2" -geometry 790x570+0+53}] != ""} {
+    window geometry "Assertion Browser 2" 790x570+0+53
+}
+window target "Assertion Browser 2" on
+assertbrowser using {Assertion Browser 2}
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 1920x940+0+24
+
+#
+# Layout selection
+#

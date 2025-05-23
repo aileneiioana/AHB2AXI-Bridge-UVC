@@ -1,0 +1,1 @@
+s1(14Feb2023:12:03:12):  xrun -uvm +incdir+../src +incdir+../example -access rwc ../example/tb_example.sv +UVM_TESTNAME=test_example_2 -gui -coverage all -covoverwrite 
