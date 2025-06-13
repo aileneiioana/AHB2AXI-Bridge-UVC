@@ -14,6 +14,8 @@ package axi_pkg;
     `include "uvm_macros.svh"
     `include "axi_types.sv"
     `include "axi_trans.sv"
+    `include "axi_callback.sv"
+    `include "axi_user_callback.sv"
     `include "axi_sequencer.sv"
     `include "axi_driver.sv"
     `include "axi_monitor.sv"
